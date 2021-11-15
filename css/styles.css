@@ -34,13 +34,24 @@ h6 {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
 
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .list {
@@ -65,6 +76,10 @@ h6 {
 }
 
 /* Шапка */
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
 
 .header-container {
   display: flex;
@@ -144,9 +159,12 @@ h6 {
 
 .hero {
   background-color: var(--second-bgc);
+  text-align: center;
 }
 
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -157,6 +175,7 @@ h6 {
 }
 
 .hero-button {
+  border-radius: 4px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -179,7 +198,24 @@ h6 {
 
 /* Особенности */
 
+.features {
+  padding-bottom: 0px;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-item {
+  width: 270px;
+}
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-item-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -197,7 +233,17 @@ h6 {
 
 /* Чем мы занимаемся */
 
+.work-list {
+  display: flex;
+}
+
+.work-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .work-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -207,8 +253,21 @@ h6 {
 }
 
 /* Наша команда */
+.team {
+  background-color: var(--third-bgc);
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .team-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -218,6 +277,8 @@ h6 {
 }
 
 .team-list-title {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -234,13 +295,26 @@ h6 {
   color: var(--main-text-color);
 }
 
+.team-card-bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 /* Подвал */
 
 .footer {
   background-color: var(--second-bgc);
 }
 
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer-logo {
+  display: block;
+  margin-bottom: 20px;
+
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -276,6 +350,18 @@ h6 {
 /* --- Портфолио--- */
 /* Фильтр */
 
+.filter-list {
+  display: flex;
+  justify-content: center;
+}
+.filter-container {
+  margin-bottom: 60px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .filter-button {
   font-family: inherit;
   font-weight: 500;
@@ -285,6 +371,8 @@ h6 {
   letter-spacing: 0.03em;
   color: var(--second-button-color);
   background-color: var(--second-button-bgc);
+  border-radius: 4px;
+  border: 0px;
 }
 .filter-button {
   cursor: pointer;
@@ -298,7 +386,27 @@ h6 {
 
 /* Проекты */
 
-.projects-litle {
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.projects-item {
+  flex-basis: calc(100% / 3 -30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.projects-card-bottom {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
+
+.projects-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
