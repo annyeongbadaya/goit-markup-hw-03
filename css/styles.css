@@ -160,10 +160,15 @@ img {
 .hero {
   background-color: var(--second-bgc);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
+  width: 696px;
   margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
 
   font-weight: 900;
   font-size: 44px;
@@ -304,9 +309,6 @@ img {
 
 .footer {
   background-color: var(--second-bgc);
-}
-
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -328,11 +330,17 @@ img {
 }
 
 .footer-address {
+  margin-bottom: 9px;
+
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+}
+
+.footer-mail {
+  margin-bottom: 9px;
 }
 
 .footer-contact {
@@ -355,7 +363,7 @@ img {
   justify-content: center;
 }
 .filter-container {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .filter-item:not(:last-child) {
@@ -363,6 +371,7 @@ img {
 }
 
 .filter-button {
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -394,7 +403,7 @@ img {
 }
 
 .projects-item {
-  flex-basis: calc(100% / 3 -30px);
+  flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
 }
